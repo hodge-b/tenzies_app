@@ -3,3 +3,71 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    display: flex;
+    justify-content: center;
+
+    padding: 2rem;
+
+    font-family: 'Fredoka', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    max-width: 30rem;
+    padding: 1rem;
+}
+
+.main--title{
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.game-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+
+    margin-top: 2rem;
+}
+
+.die--face{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 5rem;
+    height: 5rem;
+
+    font-size: 2rem;
+    background-color: lightgray;
+    box-shadow: 0 2px 2px black;
+    border-radius: 5px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 3rem;
+
+    padding: 1rem;
+    margin: 4rem 0;
+
+    font-size: 2rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 2px black;
+    cursor: pointer;
+}
+
+.roll-counter{
+    font-size: 2rem;
+}
